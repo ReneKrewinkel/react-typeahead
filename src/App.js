@@ -12,9 +12,7 @@ const App = () => {
   const [value, setValue] = useState('')
 
   useEffect( () => {
-    if(isLoaded) {
-      setFiltered(data)
-    }
+    if(isLoaded) setFiltered(data)
   }, [isLoaded])
 
 
