@@ -2,6 +2,8 @@ import { useState, useEffect, useContext } from 'react'
 import SearchField from "./SearchField";
 import Button from './Button'
 
+import { Pietje } from '../App'
+
 import AppContext from '../context/AppContext'
 
 const SearchBar = () => {
@@ -10,6 +12,7 @@ const SearchBar = () => {
 
   return(
     <div>
+
       <SearchField value={ctx.value }
                    setValue={ctx.setValue}
                    action={ctx.filterData}/>

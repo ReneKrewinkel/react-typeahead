@@ -15,7 +15,7 @@ const useFetch = (url) => {
       })
   }, [url])
 
-  return [data, data, isLoaded]
+  return [data, isLoaded]
 }
 
 export default useFetch;

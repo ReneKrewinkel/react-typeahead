@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import config from './config/config'
+import { config }  from './config'
 import useFetch from './hooks/useFetch'
 import SearchBar from './components/SearchBar'
 import List from './components/List'
@@ -34,6 +34,7 @@ const App = () => {
       { isLoaded &&
         <div>
           <SearchBar />
+          
           <List data={ filtered } />
         </div>
       }
@@ -43,3 +44,7 @@ const App = () => {
 
 
 export default App
+
+
+
+
